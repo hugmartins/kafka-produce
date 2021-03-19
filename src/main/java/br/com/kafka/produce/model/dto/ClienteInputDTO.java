@@ -12,7 +12,7 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ClientePesquisaDTO extends Cliente{
+public class ClienteInputDTO extends Cliente{
 
     @ApiModelProperty(value = "Lista de todos favorecidos vinculados ao cliente")
     private List<FavorecidoDTO> listaFavorecidos;

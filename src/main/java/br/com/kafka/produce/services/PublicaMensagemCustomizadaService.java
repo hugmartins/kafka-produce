@@ -1,7 +1,7 @@
 package br.com.kafka.produce.services;
 
-import br.com.kafka.produce.model.dto.ClientePesquisaDTO;
+import br.com.kafka.produce.model.dto.ClienteInputDTO;
 
 public interface PublicaMensagemCustomizadaService {
-    void publicarMensagem(ClientePesquisaDTO dto);
+    void publicarMensagem(ClienteInputDTO dto);
 }

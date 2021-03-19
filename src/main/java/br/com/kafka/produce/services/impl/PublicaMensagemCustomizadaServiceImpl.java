@@ -1,6 +1,6 @@
 package br.com.kafka.produce.services.impl;
 
-import br.com.kafka.produce.model.dto.ClientePesquisaDTO;
+import br.com.kafka.produce.model.dto.ClienteInputDTO;
 import br.com.kafka.produce.services.PublicaMensagemCustomizadaService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,7 +10,6 @@ import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
-import java.util.Collections;
 import java.util.Objects;
 
 @Service
@@ -25,7 +24,7 @@ public class PublicaMensagemCustomizadaServiceImpl implements PublicaMensagemCus
     private KafkaTemplate<String, String> kafkaTemplate;
 
     @Override
-    public void publicarMensagem(ClientePesquisaDTO dto) {
+    public void publicarMensagem(ClienteInputDTO dto) {
         if (Objects.isNull(dto) || CollectionUtils.isEmpty(dto.getListaFavorecidos()))
             return;
         try {

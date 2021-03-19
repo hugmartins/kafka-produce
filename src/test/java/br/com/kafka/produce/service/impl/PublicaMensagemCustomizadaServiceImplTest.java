@@ -1,6 +1,6 @@
 package br.com.kafka.produce.service.impl;
 
-import br.com.kafka.produce.model.dto.ClientePesquisaDTO;
+import br.com.kafka.produce.model.dto.ClienteInputDTO;
 import br.com.kafka.produce.model.dto.FavorecidoDTO;
 import br.com.kafka.produce.services.impl.PublicaMensagemCustomizadaServiceImpl;
 import org.junit.Before;
@@ -45,7 +45,7 @@ public class PublicaMensagemCustomizadaServiceImplTest {
 
         FavorecidoDTO favorecidoDTO = new FavorecidoDTO();
 
-        ClientePesquisaDTO dto = new ClientePesquisaDTO();
+        ClienteInputDTO dto = new ClienteInputDTO();
         dto.setCpfCnpj(MOCK_CPF);
         dto.setListaFavorecidos(Collections.singletonList(favorecidoDTO));
 
