@@ -4,6 +4,7 @@ import br.com.kafka.produce.model.dto.ClientePesquisaDTO;
 import br.com.kafka.produce.model.dto.FavorecidoDTO;
 import br.com.kafka.produce.services.PublicaMensagemCustomizadaService;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +26,7 @@ public class RestServiceController {
     })
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> pushMessage(
-            @RequestBody ClientePesquisaDTO dtoEntrada){
+            @ApiParam(name = "dtoEntrada", value = "Dados de favorecidos por cliente", required = true) @RequestBody ClientePesquisaDTO dtoEntrada){
         service.publicarMensagem(dtoEntrada);
         return ResponseEntity.ok("ok");
     }

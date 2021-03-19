@@ -10,6 +10,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public abstract class Cliente {
 
-    @ApiModelProperty(value = "CPF ou CNPJ do cliente")
+    @ApiModelProperty(value = "CPF ou CNPJ do cliente", example = "12345678900")
     private String cpfCnpj;
 }
