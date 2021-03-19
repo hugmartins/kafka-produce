@@ -1,14 +1,10 @@
 <h1 align="center">Kafka Produces</h1>
 
 ### Swagger 
-<div  align="center">
   <a href="http://localhost:8080/swagger-ui.html"><img src="https://user-images.githubusercontent.com/68226126/111772571-c57bf900-888b-11eb-9319-95201a499301.png" width="32" height="32"></a>
- </div>
 
 ### Mensagens enviadas para Kafka
-<div  align="center">
 <a href="http://127.0.0.1:3030/kafka-topics-ui/#/"><img src="https://user-images.githubusercontent.com/68226126/111794215-c2d9cd80-88a4-11eb-9ec5-ad51ac9c699f.png" width="80" height="32"></a>
-</div>
 
 ### Pré-requisitos
 
